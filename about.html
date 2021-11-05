@@ -16,7 +16,7 @@
 	  <link href="/css/mystyle.min.css" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,500,700|Open+Sans:400,600,700|Bree+Serif|Amaranth|Bitter|Federant|Nova+Square" rel="stylesheet" />
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://www.google.com/recaptcha/api.js?render=6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf"></script>
+    
   </head>
   <body> 
      <!-- Fixed navbar -->
@@ -113,18 +113,5 @@
 <!-- End timeline -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script> 
-<script type="text/javascript">
-  $(document).ready(function(){
-    $( "input[name='email']" ).on("change",function(){
-        $("input[name='_gotcha']").val("");
-        grecaptcha.ready(function() {
-         grecaptcha.execute('6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf', {action: 'submit'}).then(function(token) {
-             /*console.log( "token \n " + token);*/
-             $("input[name='_gotcha']").val(token);
-         });
-        });
-    });
-  });
-</script>
 </body>
 </html>
